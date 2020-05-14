@@ -1,0 +1,3 @@
+void function() {   // ...
+  arguments.callee();
+}();

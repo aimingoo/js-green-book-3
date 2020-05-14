@@ -11,7 +11,7 @@ if [[ $1 == tap ]]; then
     mocha --reporter tap "$file" |\
       grep -Eve '^#|^1\.\.[0-9]{1,}' |\
       grep --color -Ee '^not ok.*|^.*# SKIP.*|^'
-  done < <(find . -regex '.*/test/index.js')
+  done < <(find . -regex '.*/s-[0-9.]*/test/index.js')
 else
-  find . -regex '.*/test/index.js' | xargs -L1 mocha $*
+  find . -regex '.*/s-[0-9.]*/test/index.js' | xargs -L1 mocha $*
 fi
