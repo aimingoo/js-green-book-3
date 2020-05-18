@@ -3,7 +3,7 @@ NOTE 1:
 这是一个简单的实现。
 
 完整的实现参考：
-  https://github.com/aimignoo/qobean
+  https://github.com/aimingoo/qobean
 
 
 NOTE 2:
