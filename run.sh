@@ -5,13 +5,16 @@
 #   > bash run.sh tap
 #   > cd chapter-2 && bash ../run.sh tap
 
-# run all testcases
-if [[ $1 == tap ]]; then
-  while read -r file; do
-    mocha --reporter tap "$file" |\
-      grep -Eve '^#|^1\.\.[0-9]{1,}' |\
-      grep --color -Ee '^not ok.*|^.*# SKIP.*|^'
-  done < <(find . -regex '.*/s-[0-9.]*/test/index.js')
-else
-  find . -regex '.*/s-[0-9.]*/test/index.js' | xargs -L1 mocha $*
+ARGS=""
+if [[ $1 == "tap" ]]; then
+  ARGS="--reporter tap"
 fi
+
+# run all testcases
+while read -r file; do
+  cd $(dirname $(dirname "$file"))
+  mocha $ARGS |\
+    grep -Eve '^#|^1\.\.[0-9]{1,}' |\
+    grep --color -Ee '^not ok.*|^.*# SKIP.*|^'
+  cd - &>/dev/null
+done < <(find . -regex '.*/s-[0-9.]*/test/index.js')

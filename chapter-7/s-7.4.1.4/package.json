@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "mocha --experimental-worker"
+  },
+  "dependencies": {
+    "mocha": "^6.0.0",
+    "sinon": "^9.0.2"
+  }
+}

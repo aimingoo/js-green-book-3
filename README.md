@@ -5,6 +5,24 @@
 Issues区可以提交问题并发布勘误。
 
 
+
+# Versions
+
+已测试过的版本包括：
+
+* Node.js v8.x + Mocha v5.2.0^+^
+* Node.js v10.x~12.x + Mocha v6.0.0^+^
+
+
+
+NOTE1：第7章讲述的部分内容需要在Node v10.12之后版本才被支持，因此测试这一部分代码可能需要安装高版本Node.js。
+
+NOTE2：在Node.js v6.x以及以下版本中，需要安装Mocha和fancy-test的不同版本，因此请留意版本的匹配情况。
+
+NOTE3：在Mocha版本不支持的情况下，可以用Node.js直接运行目录中的`*.js`文件。部分情况下，你可能需要运行目录中的`run.sh`，这是简单的bash脚本，在Windows环境下可以参考该文件来运行批处理或命令。
+
+
+
 # Usage
 
 ```bash
@@ -31,4 +49,5 @@ Issues区可以提交问题并发布勘误。
 
 # History
 
-* 2020.05.20 Initial release.
+* 2020.05.18 Chapter 5~7 final.
+* 2020.05.10 Initial release, include chapter 1~4.
