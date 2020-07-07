@@ -4,7 +4,10 @@
 
 Issues区可以提交问题并发布勘误。
 
-
+本书的相关信息
+* 京东：https://item.jd.com/12883028.html
+* 亚马逊（电子书）：https://www.amazon.cn/dp/B089QJ72CF
+* 豆瓣：https://book.douban.com/subject/35085910/
 
 # Versions
 
