@@ -2,7 +2,7 @@
  * （由于main模块不再需要参与协调，因此只需要创建worker线程即可）
  * Main module
 **/
-// const { Worker } = require('worker_threads');  < FIX 添加该行
+const { Worker } = require('worker_threads');
 
 // 4 elements SAB with a lock 
 var sab = new SharedArrayBuffer(Int32Array.BYTES_PER_ELEMENT*4);

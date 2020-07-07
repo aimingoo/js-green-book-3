@@ -50,8 +50,7 @@ function coordination(e) {
   }
 }
 
-// FIX，这里多了一个')'括号在`e`之后
-process.on('require', e) => {
+process.on('require', e => {
   console.log(`[${e.worker.threadId}] require ${e.method}`);
   queue.push(e);
 });

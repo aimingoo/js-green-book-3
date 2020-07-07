@@ -8,14 +8,6 @@ class Locker {
     this.state = new Int32Array(sab, offset, LOCK_COUNT);
   }
 
-  lock2() {
-    while (true) {
-      let old = Atomics.compareExchange(this.state, LOCK_INDEX, STATE_UNLOCKED, STATE_LOCKED);
-      if (old == STATE_UNLOCKED) return; // locking: unlocked -> locked
-      Atomics.wait(this.state, LOCK_INDEX, old); // if equal old, will wait wake or timeout
-    }
-  }
-
   lock() {
     // if is 'not-equal', will non-lock and return immediately
     while (Atomics.wait(this.state, LOCK_INDEX, STATE_LOCKED)) {
@@ -25,7 +17,7 @@ class Locker {
   }
 
   unlock() {
-    // Atomics.store(this.state, LOCK_INDEX, STATE_UNLOCKED);
+    // (OR, )Atomics.store(this.state, LOCK_INDEX, STATE_UNLOCKED);
     if (Atomics.compareExchange(this.state, LOCK_INDEX, STATE_LOCKED, STATE_UNLOCKED) !== STATE_LOCKED) {
       throw new Error ("Try unlock twice");
     }

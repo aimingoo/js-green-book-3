@@ -44,7 +44,7 @@ describe(`[${chapter.toUpperCase()}] Check points`, function() {
 
     // 使用for await...of语句（只能使用在异步函数中）
     // （这里没有直接写代码，而是动态加载是为了在低版本的nodejs中运行mocha出现语法错）
-    eval(load('../for_await_stat.js'));
+    eval(load('../a_for_await_stat.js'));
     return (for_await_stat()).then(()=>{
       expect(output.stdout.split("\n").slice(2)).to.be.eql([
         "10",
@@ -62,5 +62,15 @@ describe(`[${chapter.toUpperCase()}] Check points`, function() {
         "10", "20",  // for values
         ""]);
     })
+  });
+
+  // expect case 2~3 in chapter `7.3.1.4`
+  let expect_result = [10, 20].join(",")+"\n"; // console.log(all)
+
+  fancy.stdout().stderr().
+  it('Supplement: Use AsyncGenerator with for-await', output => {
+    return Promise.require('../2.js').then(() => {
+      expect(output.stdout).to.be.equal(expect_result);
+    });
   });
 });
