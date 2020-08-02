@@ -6,10 +6,11 @@ Issues区可以提交问题并发布勘误。
 
 本书的相关信息
 * 京东：https://item.jd.com/12883028.html
+* 当当：http://product.dangdang.com/28558335.html
 * 亚马逊（电子书）：https://www.amazon.cn/dp/B089QJ72CF
 * 豆瓣：https://book.douban.com/subject/35085910/
 
-“开课吧（Web前端会客厅）”开放的访谈：
+“开课吧（Web前端会客厅）”开放的视频访谈：
 * 深度剖析JavaScript语言（[1-背景知识与语法设计等](https://www.bilibili.com/video/BV1M5411a7GK)）
 * 深度剖析JavaScript语言（[2-面向对象与结构化程序设计](https://www.bilibili.com/video/BV1MK4y1v7a2)）
 
