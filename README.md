@@ -9,7 +9,15 @@ Issues区可以提交问题并发布勘误。
 * 亚马逊（电子书）：https://www.amazon.cn/dp/B089QJ72CF
 * 豆瓣：https://book.douban.com/subject/35085910/
 
-![绿皮书第三版](images/book.png)
+“开课吧（Web前端会客厅）”开放的访谈：
+* 深度剖析JavaScript语言（[1-背景知识与语法设计等](https://www.bilibili.com/video/BV1M5411a7GK)）
+* 深度剖析JavaScript语言（[2-面向对象与结构化程序设计](https://www.bilibili.com/video/BV1MK4y1v7a2)）
+
+极客时间专栏：
+* “JavaScript核心原理解析”：https://time.geekbang.org/column/intro/252
+
+
+[![绿皮书第三版](images/book.png)](https://book.douban.com/subject/35085910/)
 
 # Versions
 
