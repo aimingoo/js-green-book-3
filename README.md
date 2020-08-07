@@ -13,6 +13,7 @@ Issues区可以提交问题并发布勘误。
 “开课吧（Web前端会客厅）”开放的视频访谈：
 * 深度剖析JavaScript语言（[1-背景知识与语法设计等](https://www.bilibili.com/video/BV1M5411a7GK)）
 * 深度剖析JavaScript语言（[2-面向对象与结构化程序设计](https://www.bilibili.com/video/BV1MK4y1v7a2)）
+* 深度剖析JavaScript语言（[3-函数式语言与动态语言](https://www.bilibili.com/video/BV16k4y117hE))
 
 极客时间专栏：
 * “JavaScript核心原理解析”：https://time.geekbang.org/column/intro/252
