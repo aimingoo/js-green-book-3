@@ -28,5 +28,9 @@ execute = require('./lib').default
 execute(\`console.log("Hello World!")\`); // Hello World!
 _SORUCE_CODE
 
+cat > ./run.sh <<_RUN_TEST
+node prepack-core/hello.js
+_RUN_TEST
+
 # done
 echo "The prepack environment initialized."
